@@ -1,40 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lukasz Klich</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+</head>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></ol>
+                <li class="navigation__item"><a class="navigation__link" href="#">Dzień 1</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Dzień 2</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Dzień 3</a></li>
+            </ul>
+        </nav>
+        <button class="navigation__button navigation__button--js">☰</button>
+    </header>
+    <main class="main">
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+        <h1 class="heading">Łukasz Klich - Strona domowa</h1>
 
+        <section class="about">
+
+            <h2 class="about__header">O mnie </h2>
+            <img class="about__picture" src="assets/img/avatar.png" alt="zdjecie">
+            <p class="about__paragraph">
+                Nazywam się Łukasz Klich. Postanowiłem przeżyć niesamowitą przygodę, dlatego biorę udział w kursie WTF:
+                Co ten frontend.
+            </p>
+            <p class="about__paragraph  about__paragraph--mini about__paragraph--js">
+                Test test
+            </p>
+        </section>
+        <section class="dairy">
+            <h2 class="dairy__header"> Pamiętniczek </h2>
+            <section class="dairy__grid">
+                <div class="dairy__item dairy__item1">
+                    <h3 class="dairy__thirdHeader"> Dzień 1 </h3>
+                    <p class="dairy__paragraph">
+                        Podczas pierwszego dnia szkolenia dowaidzialem się co dokładnie będzie przedmiotem kursu.
+                    </p>
+                </div>
+                <div class="dairy__item dairy__item2">
+                    <h3 class="dairy__thirdHeader"> Dzień 2 </h3>
+                    <p class="dairy__paragraph">
+                        Drugiego dnia szkolenia stworzyłem swój perwszy projekt.
+                    </p>
+                </div>
+                <div class="dairy__item dairy__item3">
+                    <h3 class="dairy__thirdHeader"> Dzień 3 </h3>
+                    <p class="dairy__paragraph">
+                        Dziś poznałem budowę strony internetowej.
+                    </p>
+                </div>
+                <div class="dairy__item dairy__item4">
+                    <h3 class="dairy__thirdHeader"> Dzień 4 </h3>
+                    <p class="dairy__paragraph">
+                        Kolejnym etapem kursu było zapoznanie się z HTML.
+                    </P>
+                </div>
+                <div class="dairy__item dairy__item5">
+                    <h3 class="dairy__thirdHeader"> Dzień 5 </h3>
+                    <p class="dairy__paragraph">
+                        Dzień piąty - CSS.
+                    </p>
+                </div>
+                <div class="dairy__item dairy__item6">
+                    <h3 class="dairy__thirdHeader"> Dzień 6 </h3>
+                    <p class="dairy__paragraph">
+                        Dzień szósty - sobota... finał Ligi Mistrzów :P
+                    </p>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        Strona domowa Łukasza Klicha, wszystkie treści są efektem udziału w szkoleniu WTF: Co ten frontend.
+    </footer>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
